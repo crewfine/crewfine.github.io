@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新百伦论坛-跑者装备交流与NB社区资讯指南</title>
+  <meta name="description" content="新百伦论坛是专注New Balance跑鞋、复古潮流与运动生活的中文交流社区。提供装备评测、尺码建议、实穿分享、最新资讯与选购指南，打造纯粹的NB Fans论坛。">
+  <meta name="keywords" content="新百伦论坛,New Balance,跑鞋,复古跑鞋,990,327,574,运动装备,尺码交流,NB社区">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    /* ===== 全局重置与字体 ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #f5f7fa;
+      color: #1e2a3a;
+      line-height: 1.5;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul, ol {
+      list-style: none;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* ===== 头部与导航 ===== */
+    .site-header {
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      border-bottom: 1px solid #eef0f4;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: -0.3px;
+    }
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: #b22234;
+      border-radius: 8px 2px 8px 2px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(-2deg);
+    }
+    .logo-icon::after {
+      content: "N";
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .logo-text {
+      color: #1e2a3a;
+    }
+    .logo-text span {
+      color: #b22234;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+    .nav-links a {
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: #b22234;
+      border-bottom-color: #b22234;
+    }
+    .forum-search {
+      display: flex;
+      background: #f0f2f5;
+      border-radius: 40px;
+      padding: 4px 6px 4px 16px;
+      align-items: center;
+    }
+    .forum-search input {
+      border: none;
+      background: transparent;
+      padding: 8px 6px;
+      font-size: 0.9rem;
+      width: 180px;
+      outline: none;
+    }
+    .forum-search button {
+      background: #b22234;
+      color: white;
+      border: none;
+      border-radius: 40px;
+      padding: 6px 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .forum-search button:hover {
+      background: #8f1c2a;
+    }
+    /* ===== Hero 首屏 ===== */
+    .hero-forum {
+      background: linear-gradient(135deg, #fafafa 0%, #f0ebe4 100%);
+      border-bottom: 1px solid #e4ddd4;
+      padding: 42px 0 38px;
+    }
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .hero-message {
+      flex: 1 1 300px;
+    }
+    .hero-message h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: #1e2a3a;
+      margin-bottom: 14px;
+    }
+    .hero-message h1 i {
+      font-style: normal;
+      color: #b22234;
+      border-bottom: 3px solid #b22234;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: #3e4c5c;
+      max-width: 600px;
+      margin: 14px 0 20px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .stat-item {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(4px);
+      padding: 8px 18px;
+      border-radius: 48px;
+      border: 1px solid #dee0e5;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #1e2a3a;
+    }
+    .stat-item span {
+      color: #b22234;
+      font-weight: 800;
+      margin-right: 6px;
+    }
+    .hero-card-preview {
+      flex: 1 1 260px;
+      background: #fff;
+      padding: 24px 20px;
+      border-radius: 28px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+      border: 1px solid #e8e2da;
+    }
+    .hero-card-preview h3 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+    .hot-thread-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px dashed #e6e6e6;
+      font-size: 0.95rem;
+    }
+    .hot-thread-item:last-child {
+      border-bottom: none;
+    }
+    .hot-badge {
+      background: #b22234;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+    .green-badge {
+      background: #2c6e49;
+    }
+    /* ===== 板块导航 / 分类 ===== */
+    .category-strip {
+      background: white;
+      padding: 20px 0;
+      border-bottom: 1px solid #e6eaf0;
+    }
+    .category-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+    .cat-item {
+      background: #f6f8fb;
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      color: #1e2a3a;
+      border: 1px solid #d6dae2;
+      transition: 0.15s;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cat-item:hover {
+      background: #b22234;
+      color: white;
+      border-color: #b22234;
+    }
+    .cat-item i {
+      font-style: normal;
+      font-weight: 800;
+    }
+    /* ===== 主栏目内容 ===== */
+    .forum-main {
+      padding: 38px 0 20px;
+    }
+    .section-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+    .section-title h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .section-title .more-link {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #b22234;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr;
+      gap: 24px;
+    }
+    .thread-list {
+      background: white;
+      border-radius: 20px;
+      padding: 10px 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid #eef0f3;
+    }
+    .thread-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      transition: 0.15s;
+    }
+    .thread-item:hover {
+      background: #f7f9fd;
+    }
+    .thread-rank {
+      font-weight: 800;
+      font-size: 1.2rem;
+      width: 30px;
+      color: #9aa7b1;
+      text-align: center;
+    }
+    .thread-main {
+      flex: 1;
+    }
+    .thread-title {
+      font-weight: 600;
+      color: #1e2a3a;
+      margin-bottom: 4px;
+    }
+    .thread-meta {
+      font-size: 0.8rem;
+      color: #6e7d8c;
+      display: flex;
+      gap: 10px;
+    }
+    .thread-tag {
+      background: #eef2f6;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      color: #3b4c5c;
+    }
+    .thread-replies {
+      font-size: 0.9rem;
+      background: #f1f4f8;
+      border-radius: 30px;
+      padding: 4px 12px;
+    }
+    .side-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .side-card {
+      background: white;
+      border-radius: 20px;
+      padding: 18px 18px;
+      border: 1px solid #eef0f3;
+    }
+    .side-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      border-left: 4px solid #b22234;
+      padding-left: 12px;
+    }
+    .side-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f3f7;
+      font-size: 0.95rem;
+    }
+    .side-list li:last-child {
+      border-bottom: none;
+    }
+    .poll-box {
+      background: #faf4ec;
+      border-radius: 18px;
+      padding: 14px;
+    }
+    .poll-option {
+      background: white;
+      border-radius: 30px;
+      padding: 8px 14px;
+      margin: 8px 0;
+      border: 1px solid #e5ddd2;
+    }
+    /* ===== 装备评测 / 内容区块 ===== */
+    .gear-section {
+      margin: 26px 0 18px;
+    }
+    .gear-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .gear-card {
+      background: white;
+      border-radius: 18px;
+      padding: 16px;
+      border: 1px solid #e7ecf2;
+      transition: 0.2s;
+    }
+    .gear-card:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+      transform: translateY(-3px);
+    }
+    .gear-card h4 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .gear-desc {
+      color: #43586e;
+      font-size: 0.9rem;
+      margin: 8px 0;
+    }
+    .gear-tag {
+      display: inline-block;
+      background: #eef2f6;
+      padding: 4px 12px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+    }
+    /* ===== FAQ 与社区规范 ===== */
+    .faq-section {
+      background: #f1f5f9;
+      border-radius: 32px;
+      padding: 28px 28px;
+      margin: 32px 0 20px;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 30px;
+    }
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+    .faq-item h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #b22234;
+      margin-bottom: 6px;
+    }
+    /* ===== 页脚 ===== */
+    .site-footer {
+      background: #161e27;
+      color: #bec8d2;
+      padding: 30px 0;
+      margin-top: 20px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-copyright {
+      font-size: 0.9rem;
+    }
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+    .footer-links a {
+      color: #bec8d2;
+    }
+    .footer-links a:hover {
+      color: #fff;
+    }
+    /* ===== 响应式 ===== */
+    @media (max-width: 900px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+      }
+      .forum-search {
+        width: 100%;
+        justify-content: center;
+      }
+      .forum-search input {
+        flex: 1;
+      }
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-message h1 {
+        font-size: 2rem;
+      }
+    }
+    @media (max-width: 520px) {
+      .hero-grid {
+        flex-direction: column;
+      }
+      .stat-item {
+        padding: 6px 12px;
+      }
+      .thread-item {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 页眉 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-area">
+        <span class="logo-icon"></span>
+        <span class="logo-text">新百伦<span>论坛</span></span>
+      </div>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#">首页</a>
+        <a href="#">装备评测</a>
+        <a href="#">复古系列</a>
+        <a href="#">跑者天地</a>
+        <a href="#">交易区</a>
+      </nav>
+      <div class="forum-search">
+        <input type="search" placeholder="搜索 990 / 327 / 鞋码..." aria-label="搜索论坛">
+        <button type="button">搜索</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero 首屏 -->
+  <section class="hero-forum">
+    <div class="container hero-grid">
+      <div class="hero-message">
+        <h1><i>新百伦论坛</i><br>NB 跑者与潮流的聚集地</h1>
+        <p class="hero-sub">真实装备讨论 · 尺码经验 · 实穿分享 · 新百伦最新情报。无论你是跑者还是复古跑鞋爱好者，这里都有你想要的社区氛围。</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span>24.8k</span> 会员</div>
+          <div class="stat-item"><span>86k+</span> 帖子</div>
+          <div class="stat-item"><span>今日 236</span> 新帖</div>
+        </div>
+      </div>
+      <div class="hero-card-preview">
+        <h3>🔥 热议帖子</h3>
+        <div class="hot-thread-item"><span class="hot-badge">热</span> 990v6 脚背压？换鞋带改善</div>
+        <div class="hot-thread-item"><span class="green-badge">新</span> 2002R 今年还会出新配色吗</div>
+        <div class="hot-thread-item"><span class="hot-badge">🔥</span> 尺码求助：NB 跟 Nike 怎么选？</div>
+        <div class="hot-thread-item"><span class="green-badge">晒</span> 新入的 990v4 元祖灰开箱</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类导航条 -->
+  <div class="category-strip">
+    <div class="container category-grid">
+      <span class="cat-item"><i>🏃</i> 跑鞋</span>
+      <span class="cat-item"><i>👟</i> 复古潮鞋</span>
+      <span class="cat-item"><i>🧦</i> 服饰配件</span>
+      <span class="cat-item"><i>📏</i> 尺码交流</span>
+      <span class="cat-item"><i>💬</i> 交易/求购</span>
+      <span class="cat-item"><i>📰</i> 资讯</span>
+    </div>
+  </div>
+
+  <main class="container forum-main">
+    <!-- 热门讨论 + 侧边栏 -->
+    <div class="section-title">
+      <h2>🔥 热门讨论</h2>
+      <a href="#" class="more-link">查看更多帖子 →</a>
+    </div>
+    <div class="two-col">
+      <div class="thread-list">
+        <!-- 帖子列表 -->
+        <div class="thread-item">
+          <span class="thread-rank">1</span>
+          <div class="thread-main">
+            <div class="thread-title">New Balance 990v6 真的偏大半码吗？投票结果</div>
+            <div class="thread-meta"><span class="thread-tag">尺码</span> 回复 76 · 浏览 1.2k</div>
+          </div>
+          <span class="thread-replies">最新: 跑者阿伟</span>
+        </div>
+        <div class="thread-item">
+          <span class="thread-rank">2</span>
+          <div class="thread-main">
+            <div class="thread-title">【开箱】MADE in USA 993 海军蓝，质感无敌</div>
+            <div class="thread-meta"><span class="thread-tag">开箱</span> 回复 45 · 浏览 986</div>
+          </div>
+          <span class="thread-replies">最新: NB老玩家</span>
+        </div>
+        <div class="thread-item">
+          <span class="thread-rank">3</span>
+          <div class="thread-main">
+            <div class="thread-title">327 和 57/40 怎么选？复古入门指南</div>
+            <div class="thread-meta"><span class="thread-tag">选购</span> 回复 32 · 浏览 1.5k</div>
+          </div>
+          <span class="thread-replies">最新: 复古控</span>
+        </div>
+        <div class="thread-item">
+          <span class="thread-rank">4</span>
+          <div class="thread-main">
+            <div class="thread-title">跑者必看：Fresh Foam X 1080v12 长测体验</div>
+            <div class="thread-meta"><span class="thread-tag">评测</span> 回复 58 · 浏览 2.1k</div>
+          </div>
+          <span class="thread-replies">最新: 马拉松小吴</span>
+        </div>
+        <div class="thread-item">
+          <span class="thread-rank">5</span>
+          <div class="thread-main">
+            <div class="thread-title">【曝光】某平台入的 2002R 疑似拼鞋？大家帮忙看看</div>
+            <div class="thread-meta"><span class="thread-tag">鉴定</span> 回复 93 · 浏览 3.2k</div>
+          </div>
+          <span class="thread-replies">最新: 鉴定大神</span>
+        </div>
+      </div>
+
+      <!-- 侧边栏 -->
+      <aside class="side-panel">
+        <div class="side-card">
+          <h3>⚡ 新百伦资讯</h3>
+          <ul class="side-list">
+            <li>🏷️ 990v6 新配色 “黑魂” 谍照流出</li>
+            <li>🏷️ 1906R 保护盒系列确认下月回归</li>
+            <li>🏷️ 新百伦 x 东京设计 联名企划曝光</li>
+          </ul>
+        </div>
+        <div class="side-card poll-box">
+          <h3 style="border-left-color: #2c6e49;">📊 投票：你最喜欢哪一系列？</h3>
+          <div class="poll-option">🥇 990系列 (38%)</div>
+          <div class="poll-option">🥈 327系列 (24%)</div>
+          <div class="poll-option">🥉 2002R (21%)</div>
+          <div class="poll-option">🏅 574经典 (17%)</div>
+        </div>
+        <div class="side-card">
+          <h3>👥 活跃会员</h3>
+          <ul class="side-list">
+            <li>🏃 跑者阿伟 · 鞋柜收藏 27 双</li>
+            <li>👟 复古控 · 精华帖 12 篇</li>
+            <li>🔧 小吴修鞋 · 干货分享</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 装备评测专区 -->
+    <div class="gear-section">
+      <div class="section-title">
+        <h2>👟 装备发烧友 · 热门评测</h2>
+        <a href="#" class="more-link">全部评测 →</a>
+      </div>
+      <div class="gear-grid">
+        <div class="gear-card">
+          <h4>990v6 主流跑者评价</h4>
+          <p class="gear-desc">FuelCell 中底脚感偏软弹，但鞋楦较宽。适合正常/宽脚，包裹感不如 v4。</p>
+          <span class="gear-tag">#稳定支撑</span> <span class="gear-tag">#日常慢跑</span>
+        </div>
+        <div class="gear-card">
+          <h4>New Balance 1080v12</h4>
+          <p class="gear-desc">Fresh Foam X 缓震行程长，大体重跑者好评，透气性良好，耐磨一般。</p>
+          <span class="gear-tag">#缓震</span> <span class="gear-tag">#长距离</span>
+        </div>
+        <div class="gear-card">
+          <h4>复古系列 2002R</h4>
+          <p class="gear-desc">质感与舒适平衡，搭配性高。但部分配色皮质较薄，注意保养。</p>
+          <span class="gear-tag">#潮流</span> <span class="gear-tag">#日常穿搭</span>
+        </div>
+        <div class="gear-card">
+          <h4>Hierro v7 越野</h4>
+          <p class="gear-desc">Vibram 大底抓地强劲，鞋面防泼水，适合轻越野与城市湿滑路面。</p>
+          <span class="gear-tag">#越野</span> <span class="gear-tag">#抓地</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 新手帮助 -->
+    <section class="faq-section">
+      <div class="section-title">
+        <h2>❓ 新百伦论坛 · 新手常见问题</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>新百伦尺码到底怎么选？</h3>
+          <p>美产990系列通常偏长，瘦脚建议小半码。亚产款如327、574大半码更舒适。论坛内搜“尺码对照”有详细帖。</p>
+        </div>
+        <div class="faq-item">
+          <h3>如何鉴定真假？</h3>
+          <p>可发帖附细节图，资深坛友会帮忙初步鉴别。建议对比鞋标、中底走线、鞋盒侧标。勿轻信扫码鉴定。</p>
+        </div>
+        <div class="faq-item">
+          <h3>论坛允许交易吗？</h3>
+          <p>仅限“装备交易”版块，发帖需符合版规，严禁假货、仿品，交易风险自负。</p>
+        </div>
+        <div class="faq-item">
+          <h3>如何升级权限？</h3>
+          <p>多参与讨论，认真回帖，发优质原创内容可获得声望与“资深会员”标志。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copyright">
+        © 新百伦论坛 · 非官方爱好者社区<br> 分享与交流 New Balance 文化
+      </div>
+      <div class="footer-links">
+        <a href="#">社区守则</a>
+        <a href="#">版块列表</a>
+        <a href="#">意见反馈</a>
+        <a href="#">友情链接</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
